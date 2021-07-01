@@ -21,7 +21,7 @@
 ;; font string. You generally only need these two:
 ;; (setq doom-font (font-spec :family "monospace" :size 12 :weight 'semi-light)
 ;;       doom-variable-pitch-font (font-spec :family "sans" :size 13))
-
+n
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
@@ -55,10 +55,10 @@
 
 (setq doom-font (font-spec :family "Hack" :size 14))
 
-(add-hook! markdown-mode
-  (setq grip-github-user "abhaasgoyal")
-  (setq grip-github-password "e30a7d90d7a374a6e892e8ab66cad99d629ed351")
-  (define-key markdown-mode-command-map (kbd "g") #'grip-mode))
+;; (add-hook! markdown-mode
+;;   (setq grip-github-user "username")
+;;   (setq grip-github-password "password")
+;;   (define-key markdown-mode-command-map (kbd "g") #'grip-mode))
 
 (setq ein:output-area-inlined-images t)
 (setq markdown-display-remote-images t)
